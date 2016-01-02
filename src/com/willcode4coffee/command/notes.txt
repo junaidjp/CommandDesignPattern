@@ -1,0 +1,8 @@
+The invoker components acts as a link betweens the commands and the reciever and houses the reciever and the individual 
+commands as they are sent. 
+The command is an object that encapsulates a request to the reciever. 
+The reciever is the component that is acted upon by each request.
+
+In our case we have two commands Ones is CreateReservation and other is CancelReservation
+Each of these commands works on the current Reservation object. 
+The invoker is ReservationController that will invoke the appropriate command(Either create or Cancel A reservation).
